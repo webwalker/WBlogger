@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinaAuthActivity" >
+
+    <include
+        android:id="@+id/comHead"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/com_head" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/comHead"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="156dp"
+        android:max="1000" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pbLoading"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/pbLoading"
+        android:text="@string/authing"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

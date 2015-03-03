@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppListActivity" >
+
+    <GridView
+        android:id="@+id/gvMenu"
+        style="@style/gv.menu"
+        android:layout_centerHorizontal="true"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+</RelativeLayout>

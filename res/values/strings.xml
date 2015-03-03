@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WBlogger</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_dispatch">DispatchActivity</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">首页</string>
+    <string name="title_activity_bind_list">BindListActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_log_viewer">LogViewerActivity</string>
+    <string name="title_activity_add_bind">添加微博账号</string>
+    <string name="title_activity_sina_auth">新浪微博账号</string>
+    <string name="title_activity_weibo_active">微博活跃</string>
+    <string name="title_activity_app_list">应用管理</string>
+    <string name="title_activity_weibo_sync">微博同步</string>
+    <string name="title_activity_weibo_sign">微博签到</string>
+    <string name="title_activity_more">更多</string>
+    <string name="title_activity_normal_account">添加普通账号</string>
+    <string name="title_activity_all_account">所有子账号列表</string>
+    <string name="title_activity_schedue_plan">执行计划</string>
+    <string name="title_activity_executor_log">执行日志</string>
+    <string name="title_activity_sub_account">所有子账号列表</string>
+    <string name="title_activity_setting_rule">账号规则设置</string>
+    <string name="title_activity_setting_comment">监控评论设置</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_wblogger_preference">WBloggerPreferenceActivity</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/commonRadioGroupFrame"
+        style="@style/tabTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RadioGroup
+            android:id="@+id/commonMainRadio"
+            style="@style/bottomtab"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/rbSelect"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableTop="@android:drawable/checkbox_on_background"
+                android:text="@string/acc_select_all" />
+
+            <Button
+                android:id="@+id/rbBind"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/bind"
+                android:text="@string/acc_bind" />
+
+            <Button
+                android:id="@+id/rbUnBind"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/unbind"
+                android:text="@string/acc_unbind" />
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

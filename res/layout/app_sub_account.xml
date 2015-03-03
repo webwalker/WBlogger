@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubAccountActivity" >
+
+    <include
+        android:id="@+id/comHead"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/com_head" />
+
+    <ListView
+        android:id="@+id/MyListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rgNavButton"
+        android:layout_below="@+id/comHead"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂时没有子账号数据"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/common_tabs_include"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/sub_tabs" />
+    </LinearLayout>
+
+</RelativeLayout>

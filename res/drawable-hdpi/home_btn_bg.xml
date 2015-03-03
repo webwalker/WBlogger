@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/home_btn_bg_d" android:state_checked="true" android:state_enabled="true" android:color="#00C0D1"/>
+    <item android:drawable="@drawable/home_btn_bg_d" android:state_enabled="true" android:state_pressed="true" android:color="#ff00ffff"/>
+    <item android:color="#cfff"/>
+
+</selector>

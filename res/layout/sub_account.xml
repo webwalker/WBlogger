@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/comHead"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/com_head" />
+
+    <ListView
+        android:id="@+id/MyListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/comHead"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂时没有子账号数据"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" >
+    </TextView>
+
+</RelativeLayout>

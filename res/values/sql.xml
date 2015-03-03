@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="select_user"><Data><![CDATA[select 1 from t_user where userid = ? and password = ?]]></Data></string>
+    <string name="insert_user"><Data><![CDATA[insert into t_user(userid,password) values(?,?)]]></Data></string>
+    <string name="select_account_with_mapping"><Data>
+<![CDATA[select t1.*,count(t2.id) as num  from t_user_account t1 left join t_account_mapping t2  
+on t1.app_id = t2.app_id and t1.id = t2.ua_id and t2.status = 1 
+where t1.isparent = 1 
+group by t1.app_id, t1.nickname 
+order by createdate desc]]>
+</Data></string>
+    <string name="select_app_account"><Data><![CDATA[select * from t_user_account where app_id = ? and isparent = ? order by createdate desc]]></Data></string>
+    <string name="select_all_sub_account"><Data><![CDATA[select * from t_user_account where isparent = ? and expires_in <> 0 order by createdate desc]]></Data></string>
+    <string name="select_single_account"><Data><![CDATA[select * from t_user_account where id=?]]></Data></string>
+    <string name="select_single_account_byname"><Data><![CDATA[select * from t_user_account where app_id=? and nickname=?]]></Data></string>
+    <string name="insert_user_account"><Data><![CDATA[insert into t_user_account(app_id,nickname,uid,user_token,expires_in,isparent,status) values(?,?,?,?,?,?,?)]]></Data></string>
+    <string name="update_user_account"><Data><![CDATA[update t_user_account set nickname=?,user_token=?,expires_in=?,updatedate=datetime(\'now\',\'localtime\') where id=?]]></Data></string>
+    <string name="delete_user_account"><Data><![CDATA[delete from t_user_account where id=?]]></Data></string>
+    <string name="update_account_isparent"><Data><![CDATA[update t_user_account set isparent=?,status=? where id=?]]></Data></string>
+    <string name="insert_account_mapping"><Data><![CDATA[insert into t_account_mapping (app_id,ua_id,uid,sub_uid,status) values(?,?,?,?,?)]]></Data></string>
+    <string name="update_account_mapping"><Data><![CDATA[update t_account_mapping set status=?,updatedate=CURRENT_DATE where id=?]]></Data></string>
+    <string name="select_account_mapping"><Data><![CDATA[select * from t_account_mapping where ua_id = ?]]></Data></string>
+    <string name="delete_account_mapping"><Data><![CDATA[delete from t_account_mapping where ua_id=? and sub_uid = ?]]></Data></string>
+    <string name="delete_account_mapping_via_name"><Data><![CDATA[delete from t_account_mapping where app_id=? and sub_uid=?]]></Data></string>
+    <string name="delete_all_account_mapping"><Data><![CDATA[delete from t_account_mapping where ua_id=?]]></Data></string>    
+    <string name="select_mapping_childlist"><Data><![CDATA[select distinct t2.* from t_account_mapping t1,t_user_account t2 where t1.uid=? and t1.app_id=? and t1.sub_uid=t2.uid]]></Data></string>
+    <string name="select_apptype"><Data><![CDATA[select * from t_apptype where status = ? order by createdate]]></Data></string>
+    <string name="insert_applog"><Data><![CDATA[insert into t_log_app (app_id,title,body) values (?,?,?)]]></Data></string>
+    <string name="insert_tasklog"><Data><![CDATA[insert into t_log_task (app_id,monitor_rule_id,task_rule_id,time_rule_id,uid,nickname,body,status,retry_times) values(?,?,?,?,?,?,?,?,?)]]></Data></string>
+    <string name="select_task_log"><Data>
+<![CDATA[select t.*, m.rule_name as mname,ta.rule_name as taname,ti.rule_name as tname 
+from t_log_task t, t_rule_monitor m, t_rule_task ta,t_rule_time ti 
+where t.monitor_rule_id = m.rule_id 
+and t.task_rule_id = ta.rule_id 
+and t.time_rule_id = ti.rule_id   
+order by createdate desc limit 0,50]]>
+</Data></string>
+    <string name="select_monitor_rule"><Data><![CDATA[select * from t_rule_monitor where status = ? order by createdate desc]]></Data></string>
+    <string name="select_task_rule"><Data><![CDATA[select * from t_rule_task where status=? order by createdate desc]]></Data></string>
+    <string name="select_time_rule"><Data><![CDATA[select * from t_rule_time where status=? order by createdate desc]]></Data></string>
+    <string name="insert_schedue_executor"><Data><![CDATA[insert into t_schedue_executor (app_id,uid,task_rule_id,request_body,request_time,status,lock_flag) values(?,?,?,?,?,?,?)]]></Data></string>
+    <string name="select_se_all"><Data>
+<![CDATA[select s.*, r.rule_name from t_schedue_executor s inner join t_rule_task r 
+on s.task_rule_id = r.rule_id order by s.createdate desc]]>
+</Data></string>
+    <string name="select_schedue_executor"><Data><![CDATA[select * from t_schedue_executor where lock_flag=? and request_time <= datetime(\'now\',\'localtime\') limit 0,?]]></Data></string>
+    <string name="update_schedue_executor"><Data><![CDATA[update t_schedue_executor set lock_flag=?,status=? where id=?]]></Data></string>
+    <string name="delete_schedue_executor"><Data><![CDATA[delete from t_schedue_executor where id=?]]></Data></string>
+    <string name="delete_schedue_executor_parent"><Data><![CDATA[delete from t_schedue_executor where ua_id=?]]></Data></string>
+    <string name="insert_schedue_monitor"><Data><![CDATA[insert into t_schedue_monitor (ua_id,uid,monitor_rule_id,task_rule_id,time_rule_id,post_since_id,comm_id,status) values(?,?,?,?,?,?,?,?)]]></Data></string>
+    <string name="select_schedue_monitor"><Data><![CDATA[select * from t_schedue_monitor where ua_id=?]]></Data></string>
+    <string name="select_schedue_monitor_full"><Data>
+<![CDATA[select s.*, u.app_id, u.user_token,u.nickname from t_schedue_monitor s, t_user_account u
+where s.ua_id = u.id
+and s.ua_id = ?]]>
+</Data></string>
+    <string name="delete_schedue_monitor"><Data><![CDATA[delete from t_schedue_monitor where id=?]]></Data></string>
+    <string name="delete_schedue_monitor_parent"><Data><![CDATA[delete from t_schedue_monitor where ua_id=?]]></Data></string>
+    <string name="update_monitor_comment"><Data><![CDATA[update t_schedue_monitor set comm_id =? where ua_id =?]]></Data></string>
+    <string name="update_sm_rule"><Data><![CDATA[update t_schedue_monitor set monitor_rule_id=?,task_rule_id=?,time_rule_id=?, post_since_id = ? where ua_id=?]]></Data></string>
+    <string name="update_sm_extinfo"><Data><![CDATA[update t_schedue_monitor set post_since_id=?, updatedate = datetime(\'now\',\'localtime\') where ua_id=?]]></Data></string>
+    <string name="select_comments"><Data><![CDATA[select * from t_comments_random where status = ? order by createdate desc]]></Data></string>
+    <string name="select_single_comment"><Data><![CDATA[select * from t_comments_random where comm_id = ? and status = ? order by createdate desc]]></Data></string>
+    <string name="select_comments_maxid"><Data><![CDATA[select max(comm_id) as id from t_comments_random]]></Data></string>
+    <string name="insert_comments"><Data><![CDATA[insert into t_comments_random (comm_id,comm_desc,status) select max(comm_id)+1,?,? from t_comments_random]]></Data></string>
+
+</resources>

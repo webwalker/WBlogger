@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="9.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="9.0dip"
+        android:paddingTop="20dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/officeLayout"
+                style="@drawable/state_color_more_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/moreitem_bg_top"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/more_panel_imageview_title"
+                    android:layout_marginLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:src="@drawable/moreitems_down_icon" />
+
+                <TextView
+                    android:id="@+id/fastDownload"
+                    style="@style/more_panel_textview_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/fast_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="18dp"
+                android:layout_below="@+id/officeLayout"
+                android:layout_marginTop="-18dp"
+                android:background="@drawable/moreitem_bg_bottom"
+                android:baselineAligned="true" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <LinearLayout
+                style="@drawable/state_color_more_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/moreitem_bg_top"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/updateImage"
+                    style="@style/more_panel_imageview_title"
+                    android:layout_marginLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:src="@drawable/unbind" />
+
+                <TextView
+                    android:id="@+id/moresetting"
+                    style="@style/more_panel_textview_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="18dp"
+                android:layout_below="@+id/officeLayout"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/moreitem_bg_bottom"
+                android:baselineAligned="true" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@drawable/state_color_more_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/moreitem_bg_top"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/officeWeiboImage"
+                style="@style/more_panel_imageview_title"
+                android:layout_marginLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:src="@drawable/readmode_icon" />
+
+            <TextView
+                android:id="@+id/officeWeiboContent"
+                style="@style/more_panel_textview_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="@string/support_site" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/moreitem_bg_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedBackLayout"
+            style="@drawable/state_color_more_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/moreitem_bg_middle"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/feedBackImage"
+                style="@style/more_panel_imageview_title"
+                android:layout_marginLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:src="@drawable/moreitems_feedback_icon" />
+
+            <TextView
+                android:id="@+id/feedBackContent"
+                style="@style/more_panel_textview_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="@string/weibo_feedback" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/moreitem_bg_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/updateLayout"
+            style="@drawable/state_color_more_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/moreitem_bg_middle"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/updateImage"
+                style="@style/more_panel_imageview_title"
+                android:layout_marginLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:src="@drawable/moreitems_version" />
+
+            <TextView
+                android:id="@+id/updateContent"
+                style="@style/more_panel_textview_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="@string/weibo_check_update" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/moreitem_bg_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moreAboutLayout"
+            style="@drawable/state_color_more_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:background="@drawable/moreitem_bg_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/moreAboutImage"
+                style="@style/more_panel_imageview_title"
+                android:layout_marginLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:src="@drawable/moreitems_about_icon" />
+
+            <TextView
+                android:id="@+id/moreAboutContent"
+                style="@style/more_panel_textview_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="@string/menu_about" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

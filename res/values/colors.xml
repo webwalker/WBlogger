@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="transparent">#0000</color>
+    <color name="titleBg">#FFF000</color>
+    <color name="highlight">#0FFFFF</color>
+    <color name="morebg">#DFE1E1</color>
+
+</resources>

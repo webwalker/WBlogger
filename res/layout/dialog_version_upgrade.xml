@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="5dp"
+            android:textColor="#535353"
+            android:textSize="@dimen/textL" />
+
+        <FrameLayout
+            android:id="@+id/dialogContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogTitle"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/appupdateinfoout"
+                    android:layout_height="wrap_content" >
+                </LinearLayout>
+
+                <LinearLayout android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/appupdatebtnstart"
+                        android:layout_marginRight="@dimen/L"
+                        android:layout_weight="1"
+                        android:onClick="startupdate"
+                        android:text="下载新版" />
+
+                    <Button
+                        android:id="@+id/appupdatebtncancle"
+                        android:layout_marginLeft="@dimen/L"
+                        android:layout_weight="1"
+                        android:onClick="cancleupdate"
+                        android:text="以后再说" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeiboSignActivity" >
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:text="@string/loc_search_tip" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvNearBy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etSearch"
+        android:background="#FFEEDD"
+        android:text="@string/loc_nearby_tip" />
+
+    <ListView
+        android:id="@+id/lvLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvNearBy" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#595C60"
+        android:text=""
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

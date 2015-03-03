@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group>
+        <item
+            android:id="@+id/menu_app_detail"
+            android:title="查看详情"/>
+        <item
+            android:id="@+id/menu_app_run_end"
+            android:title="结束运行"/>
+        <item
+            android:id="@+id/menu_app_uninstall"
+            android:title="卸载"/>
+    </group>
+    <group android:id="@+id/root_group" >
+        <item
+            android:id="@+id/menu_app_delete_data"
+            android:title="清空缓存"/>
+        <item
+            android:id="@+id/menu_app_delete_all"
+            android:title="清空缓存和数据"/>
+    </group>
+
+</menu>

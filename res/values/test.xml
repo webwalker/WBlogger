@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SQLiteActivity!</string>
+    <string name="createDatabaseButton">createDatabase</string>
+    <string name="updateDatabaseButton">updateDatabase</string>
+    <string name="insertButton">insert</string>
+    <string name="updateButton">update</string>
+    <string name="selectButton">select</string>
+    <string name="deleteButton">delete</string>
+
+</resources>

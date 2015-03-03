@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pre_title" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="start_when_boot_completed"
+            android:summary="是否需要开机时启动本程序"
+            android:title="@string/pre_boot_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="auto_update"
+            android:summaryOff="已关闭自动更新"
+            android:summaryOn="已启用自动更新"
+            android:title="@string/pre_auto_update_title" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:dialogMessage="请输入本地密码（为空时，登录不需要验证）"
+            android:dialogTitle="登录保护"
+            android:key="local_pass"
+            android:negativeButtonText="取消"
+            android:positiveButtonText="确定"
+            android:title="设置本地密码" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pre_active_title" >
+        <EditTextPreference
+            android:defaultValue="1"
+            android:dialogMessage="请输入监控周期（默认为1分钟）"
+            android:dialogTitle="监控设置"
+            android:key="monitor_period"
+            android:negativeButtonText="取消"
+            android:positiveButtonText="确定"
+            android:summary="用于间隔多久监控主号码动态"
+            android:title="设置监控周期" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_other" >
+        <PreferenceScreen
+            android:summary="@string/about_summary"
+            android:title="@string/about_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://blog.csdn.net/webwalker" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_select"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="全选"/>
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="删除"/>
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="新增"/>
+    <item
+        android:id="@+id/menu_run"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="运行"/>
+    <item
+        android:id="@+id/menu_stop"
+        android:icon="@android:drawable/ic_media_pause"
+        android:title="停止"/>
+    <item
+        android:id="@+id/menu_sub_all"
+        android:title="所有子帳戶列表"/>
+    <item
+        android:id="@+id/menu_schedue"
+        android:title="执行计划"/>
+    <item
+        android:id="@+id/menu_log"
+        android:title="执行日志"/>
+
+</menu>

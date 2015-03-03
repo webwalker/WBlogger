@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_close">关闭</string>
+    <string name="dialog_title_confirm">确认</string>
+    <string name="dialog_title_download">下载确认</string>
+    <string name="dialog_message_delete_account">删除后将无法恢复,是否继续?</string>
+    <string name="dialog_message_isparent">只有经过授权的主账号更新后才能有效，
+        同时更新后将删除账号绑定、执行计划、监控规则,是否继续?</string>
+    <string name="rule_time">时间规则</string>
+    <string name="rule_monitor">监控规则</string>
+    <string name="rule_task">任务规则</string>
+    <string name="login">登录</string>
+    <string name="is_continue">是否继续?</string>
+
+    <!-- Controls -->
+    <string name="menu_about">关于</string>
+    <string name="more_title">更多</string>
+    <string name="weibo_feedback">意见反馈</string>
+    <string name="weibo_check_update">新版本检测</string>
+    <string name="support_site">支持站点</string>
+    <string name="fast_down">二维高速下载</string>
+    <string name="tip_select_apptype">选择应用类型</string>
+    <string name="fun_sina_tip">新浪微博</string>
+    <string name="pre_title">系统设置</string>
+    <string name="pre_boot_title">开机启动</string>
+    <string name="pre_auto_update_title">自动更新</string>
+    <string name="pre_monitor_period">监控周期</string>
+    <string name="pre_password">启用本地密码</string>
+    <string name="pre_active_title">微博活跃设置</string>
+    <string name="about"> WBlogger\nVersion:1.0.1\nCopyright © 2013 Mcan.cn WebWalker 版权所有</string>
+    <string name="about_title">我的博客</string>
+    <string name="about_summary">http://blog.csdn.net/webwalker</string>
+    <string name="about_other">其他</string>
+    <string name="input_pass">请输入密码</string>
+    <string name="select_app_type">应用类型</string>
+    <string name="is_main_account">是否为主账号</string>
+    <string name="is_need_auth">是否需要授权验证</string>
+    <string name="click_add">点击添加</string>
+    <string name="acc_select_all">全选</string>
+    <string name="acc_bind">绑定</string>
+    <string name="acc_unbind">解绑</string>
+    <string name="acc_back">返回</string>
+    <string name="camera_scan">二维码扫描</string>
+    <string name="camera_cancel">取消</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_active">微博活跃</string>
+    <string name="tab_sync">微博同步</string>
+    <string name="tab_sign">微博签到</string>
+    <string name="tab_more">更多</string>
+    <string name="guide_tip1">还在为微博不够活跃而担心吗？</string>
+    <string name="guide_tip2">还在为微博同步而苦苦找寻免费的应用？</string>
+    <string name="guide_tip3">还在为微博的签到而到处开启APP吗？
+        现在都不需要了，一款在手，走遍神州!</string>
+    <string name="guide_enter">点击进入</string>
+    <string name="loading">加载中...</string>
+    <string name="setting">设置</string>
+    <string name="nor_nickname">请输入该账号在微博的昵称</string>
+    <string name="nor_add">添加</string>
+    <string name="not_running">未运行</string>
+    <string name="comm_select">选择评论</string>
+    <string name="comm_rand">随机评论</string>
+    <string name="comm_disable">禁用评论功能</string>
+    <string name="authing">授权认证中...</string>
+    <string name="not_expire">未过期</string>
+    <string name="exit">退出</string>
+    <string name="confirm_exit">你确定要退出吗？</string>
+    <string name="sys_msg_title">WBlogger消息</string>
+    <string name="item_custom_text">-----自定义-----</string>
+    <string name="app_list_header_refresh_down">下拉刷新</string>
+    <string name="app_list_header_refreshing">正在刷新</string>
+    <string name="app_list_header_refresh_up">松开刷新</string>
+    <string name="app_list_header_refresh_last_update">上次更新于:%s</string>
+    <string name="app_list_footer_more">更多</string>
+    <string name="app_list_footer_loading">正在加载</string>
+    <string name="sub_acc_list_title">子账号映射</string>
+    <string name="loc_search_tip">搜索地点...</string>
+    <string name="loc_nearby_tip">附近</string>
+    <string name="menu_refresh">刷新</string>
+
+    <string name="dialog_account_title">添加主账号</string>
+
+</resources>

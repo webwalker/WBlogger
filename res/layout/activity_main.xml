@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.webwalker.wblogger"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/comHead"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/com_head" />
+
+    <LinearLayout
+        android:id="@+id/containerBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/common_tabs_include"
+        android:layout_below="@+id/comHead"
+        android:background="@color/white"
+        android:measureAllChildren="true" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/common_tabs_include"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/common_tabs" />
+    </LinearLayout>
+
+</RelativeLayout>

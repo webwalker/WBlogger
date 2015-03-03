@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/commonRadioGroupFrame"
+        style="@style/tabTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RadioGroup
+            android:id="@+id/commonMainRadio"
+            style="@style/bottomtab"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RadioButton
+                android:id="@+id/rbHome"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableTop="@drawable/icon_home_nor"
+                android:text="@string/tab_home" />
+
+            <RadioButton
+                android:id="@+id/rbActive"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_selfinfo_nor"
+                android:text="@string/tab_active" />
+
+            <RadioButton
+                android:id="@+id/rbSync"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/icon_selfinfo_nor"
+                android:text="@string/tab_sync" />
+
+            <RadioButton
+                android:id="@+id/rbSign"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_selfinfo_nor"
+                android:text="@string/tab_sign" />
+
+            <RadioButton
+                android:id="@+id/rbMore"
+                style="@style/rb.tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_more_nor"
+                android:text="@string/tab_more" />
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>
